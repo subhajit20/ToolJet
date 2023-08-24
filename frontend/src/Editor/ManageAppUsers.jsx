@@ -251,7 +251,9 @@ class ManageAppUsersComponent extends React.Component {
                     <div className="input-group">
                       <Textarea
                         disabled
-                        className={`input-with-icon ${this.props.darkMode && 'text-light'}`}
+                        className={`input-with-icon ${this.props.darkMode && 'text-light'} ${
+                          this.props.darkMode && 'bg-dark'
+                        }`}
                         rows={5}
                         value={embeddableLink}
                         data-cy="iframe-link"
